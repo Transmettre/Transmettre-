@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choisissez un monument</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+ 
+    .container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      padding: 60px 50px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+ 
+    .icon {
+      font-size: 64px;
+      margin-bottom: 30px;
+    }
+ 
+    h1 {
+      color: #2d3748;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+ 
+    .subtitle {
+      color: #718096;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+ 
+    .monuments {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+ 
+    .monument-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      text-align: left;
+      text-decoration: none;
+      padding: 20px 24px;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      background-color: #f7fafc;
+      color: #2d3748;
+      transition: all 0.3s ease;
+    }
+ 
+    .monument-card:hover {
+      border-color: #667eea;
+      background-color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(102, 126, 234, 0.25);
+    }
+ 
+    .monument-emoji {
+      font-size: 40px;
+      flex-shrink: 0;
+    }
+ 
+    .monument-info {
+      flex: 1;
+    }
+ 
+    .monument-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+ 
+    .monument-desc {
+      font-size: 14px;
+      color: #718096;
+    }
+ 
+    .monument-arrow {
+      color: #667eea;
+      font-size: 20px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+ 
+    .monument-card:hover .monument-arrow {
+      transform: translateX(4px);
+    }
+ 
+    .footer {
+      margin-top: 30px;
+      color: #a0aec0;
+      font-size: 14px;
+    }
+ 
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 30px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🏛️</div>
+ 
+    <h1>Choisissez un monument</h1>
+    <p class="subtitle">Sélectionnez le monument que vous souhaitez visiter</p>
+ 
+    <div class="monuments">
+ 
+      <!-- ===================================================== -->
+      <!-- MONUMENT 1 : modifiez le nom, la description et le lien -->
+      <!-- ===================================================== -->
+      <a class="monument-card" href="fernandmarquigny/">
+        <span class="monument-emoji">⛲</span>
+        <span class="monument-info">
+          <span class="monument-name">Place Fernand Marquigny</span>
+          <span class="monument-desc">Visite audioguidée</span>
+        </span>
+        <span class="monument-arrow">→</span>
+      </a>
+ 
+      <!-- ===================================================== -->
+      <!-- MONUMENT 2 -->
+      <!-- ===================================================== -->
+      <a class="monument-card" href="placedelarepublique/">
+        <span class="monument-emoji">🏛️</span>
+        <span class="monument-info">
+          <span class="monument-name">Place de la République</span>
+          <span class="monument-desc">Visite audioguidée</span>
+        </span>
+        <span class="monument-arrow">→</span>
+      </a>
+ 
+      <!-- ===================================================== -->
+      <!-- MONUMENT 3 -->
+      <!-- ===================================================== -->
+      <a class="monument-card" href="hoteldelacoupole/">
+        <span class="monument-emoji">🏨</span>
+        <span class="monument-info">
+          <span class="monument-name">Hôtel de la Coupole</span>
+          <span class="monument-desc">Visite audioguidée</span>
+        </span>
+        <span class="monument-arrow">→</span>
+      </a>
+ 
+    </div>
+ 
+    <div class="footer">
+      Profitez de votre visite guidée
+    </div>
+  </div>
+</body>
+</html>
